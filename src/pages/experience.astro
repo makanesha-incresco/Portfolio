@@ -1,0 +1,246 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Professional Experience">
+    <Navbar active="experience" />
+    <main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto blueprint-grid min-h-screen">
+        <header class="mb-24 flex flex-col md:flex-row justify-between items-end gap-8 border-l-2 border-primary pl-8">
+            <div class="max-w-2xl">
+                <div class="font-label text-primary text-xs tracking-[0.3em] uppercase mb-4">Registry // Professional Trace Log</div>
+                <h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-on-surface leading-none mb-6">
+                    CAREER <br/> <span class="text-primary-container">ARCHITECTURE</span>
+                </h1>
+                <p class="text-on-surface/70 text-lg max-w-lg leading-relaxed font-light">
+                    A technical timeline mapping my journey from core engineering to strategic product analysis and business growth.
+                </p>
+            </div>
+            <div class="text-right hidden md:block">
+                <div class="font-label text-on-surface/40 text-[10px] tracking-widest uppercase mb-1">Status: Verified</div>
+                <div class="font-label text-on-surface text-xs font-mono">LOG_VERSION_2.4.0</div>
+            </div>
+        </header>
+
+        <!-- Experience Content -->
+        <div class="grid md:grid-cols-4 gap-0 border border-outline-variant/30 overflow-hidden rounded-xl bg-surface/50 backdrop-blur-sm">
+            <div class="md:col-span-1 bg-surface-container-low border-r border-outline-variant/30">
+                <div class="p-8">
+                    <div class="mb-4">
+                        <h3 class="font-headline font-bold text-xl text-primary mb-1">Incresco</h3>
+                        <p class="text-xs font-label text-on-surface/40 tracking-widest uppercase">Enterprise Solutions</p>
+                    </div>
+                    <nav class="space-y-2 mb-8">
+                        <button id="show-ba" class="exp-btn w-full text-left p-4 bg-primary/10 text-primary border-l-4 border-primary transition-all flex items-center justify-between group">
+                            <div class="flex flex-col">
+                                <span class="font-label text-[10px] uppercase opacity-50">Current Role</span>
+                                <span class="font-label text-sm uppercase font-bold">Business Analyst</span>
+                            </div>
+                            <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">insights</span>
+                        </button>
+                        <button id="show-se" class="exp-btn w-full text-left p-4 hover:bg-surface-container-high/50 text-on-surface/50 hover:text-on-surface transition-all flex items-center justify-between group border-l-4 border-transparent">
+                            <span class="font-label text-sm uppercase">Software Engineer Intern</span>
+                            <span class="material-symbols-outlined text-sm">terminal</span>
+                        </button>
+                    </nav>
+                    <div class="mb-4">
+                        <h3 class="font-headline font-bold text-xl text-primary mb-1">Infosys</h3>
+                        <p class="text-xs font-label text-on-surface/40 tracking-widest uppercase">Springboard</p>
+                    </div>
+                    <nav class="space-y-2">
+                        <button id="show-ai" class="exp-btn w-full text-left p-4 hover:bg-surface-container-high/50 text-on-surface/50 hover:text-on-surface transition-all flex items-center justify-between group border-l-4 border-transparent">
+                            <span class="font-label text-sm uppercase">AI Intern</span>
+                            <span class="material-symbols-outlined text-sm">smart_toy</span>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+            <div class="md:col-span-3 p-8 md:p-12 bg-surface">
+                <!-- Business Analyst Content -->
+                <div id="exp-ba" class="exp-content block animate-fade-in">
+                    <div class="flex flex-col md:flex-row justify-between items-start mb-10 gap-4">
+                        <div>
+                            <span class="text-secondary font-label text-xs uppercase tracking-widest flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                Now Live: Strategic Tier
+                            </span>
+                            <h3 class="font-headline text-4xl font-bold mt-2">Business Analyst</h3>
+                            <p class="text-on-surface/60 mt-1 italic">Nov 2025 — Present</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-label uppercase border border-primary/20 tracking-tighter">Product Strategy</span>
+                            <span class="px-3 py-1 bg-secondary/10 text-secondary text-[10px] font-label uppercase border border-secondary/20 tracking-tighter">Requirement Analysis</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-label uppercase border border-primary/20 tracking-tighter">MVP Definition</span>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <div>
+                            <h4 class="font-label text-[10px] text-secondary tracking-widest uppercase mb-6 flex items-center gap-2">
+                                <span class="h-[1px] w-4 bg-secondary/40"></span>
+                                Mission Parameters
+                            </h4>
+                            <ul class="space-y-4">
+                                <li class="flex gap-4 group">
+                                    <span class="material-symbols-outlined text-secondary text-xl opacity-40 group-hover:opacity-100 transition-opacity">verified</span>
+                                    <p class="text-sm leading-relaxed text-on-surface/80">Business requirement analysis and deep client problem space exploration.</p>
+                                </li>
+                                <li class="flex gap-4 group">
+                                    <span class="material-symbols-outlined text-secondary text-xl opacity-40 group-hover:opacity-100 transition-opacity">verified</span>
+                                    <p class="text-sm leading-relaxed text-on-surface/80">Structuring multi-phase product approaches and setting solution directions.</p>
+                                </li>
+                                <li class="flex gap-4 group">
+                                    <span class="material-symbols-outlined text-secondary text-xl opacity-40 group-hover:opacity-100 transition-opacity">verified</span>
+                                    <p class="text-sm leading-relaxed text-on-surface/80">Defining MVP scope and technical feasibility for high-stake deployments.</p>
+                                </li>
+                                <li class="flex gap-4 group">
+                                    <span class="material-symbols-outlined text-secondary text-xl opacity-40 group-hover:opacity-100 transition-opacity">verified</span>
+                                    <p class="text-sm leading-relaxed text-on-surface/80">Bridging communication gaps between technical teams and enterprise stakeholders.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="glass-card p-8 border-secondary/20 relative overflow-hidden bg-secondary/[0.02]">
+                            <div class="absolute -top-4 -right-4 p-2 opacity-[0.03] rotate-12">
+                                <span class="material-symbols-outlined text-9xl text-secondary">trending_up</span>
+                            </div>
+                            <h4 class="font-headline font-bold text-xs text-secondary uppercase tracking-widest mb-6">Execution Metrics</h4>
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="flex justify-between text-[10px] font-label uppercase text-on-surface/50 mb-1">
+                                        <span>Client Satisfaction</span>
+                                        <span>98%</span>
+                                    </div>
+                                    <div class="h-[2px] w-full bg-outline-variant/30">
+                                        <div class="h-full bg-secondary w-[98%]"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-[10px] font-label uppercase text-on-surface/50 mb-1">
+                                        <span>Strategic Alignment</span>
+                                        <span>100%</span>
+                                    </div>
+                                    <div class="h-[2px] w-full bg-outline-variant/30">
+                                        <div class="h-full bg-secondary w-full"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Software Engineer Content -->
+                <div id="exp-se" class="exp-content hidden animate-fade-in">
+                    <div class="flex flex-col md:flex-row justify-between items-start mb-10 gap-4">
+                        <div>
+                            <h3 class="font-headline text-4xl font-bold mt-2">Software Engineer Intern</h3>
+                            <p class="text-on-surface/60 mt-1 italic">Jul 2025 — Nov 2025</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-label uppercase border border-primary/20">Backend Architecture</span>
+                            <span class="px-3 py-1 bg-secondary/10 text-secondary text-[10px] font-label uppercase border border-secondary/20">Data Migration</span>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <div>
+                            <h4 class="font-label text-[10px] text-primary tracking-widest uppercase mb-6 flex items-center gap-2">
+                                <span class="h-[1px] w-4 bg-primary/40"></span>
+                                Technical Objectives
+                            </h4>
+                            <ul class="space-y-4">
+                                <li class="flex gap-4 group">
+                                    <span class="material-symbols-outlined text-primary text-xl opacity-40 group-hover:opacity-100 transition-opacity">code</span>
+                                    <p class="text-sm leading-relaxed text-on-surface/80">Architecting Medusa.js backend logic for high-traffic commerce ecosystems.</p>
+                                </li>
+                                <li class="flex gap-4 group">
+                                    <span class="material-symbols-outlined text-primary text-xl opacity-40 group-hover:opacity-100 transition-opacity">storage</span>
+                                    <p class="text-sm leading-relaxed text-on-surface/80">Designing complex ETL pipelines for legacy to modern database transitions.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="glass-card p-8 border-primary/20 relative overflow-hidden bg-primary/[0.02]">
+                            <h4 class="font-headline font-bold text-xs text-primary uppercase tracking-widest mb-6">Stack Utilization</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-surface-container text-[10px] font-label text-on-surface border border-outline-variant/30">Node.js</span>
+                                <span class="px-3 py-1 bg-surface-container text-[10px] font-label text-on-surface border border-outline-variant/30">PostgreSQL</span>
+                                <span class="px-3 py-1 bg-surface-container text-[10px] font-label text-on-surface border border-outline-variant/30">Medusa.js</span>
+                                <span class="px-3 py-1 bg-surface-container text-[10px] font-label text-on-surface border border-outline-variant/30">React.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Intern Content -->
+                <div id="exp-ai" class="exp-content hidden animate-fade-in">
+                    <div class="flex flex-col md:flex-row justify-between items-start mb-10 gap-4">
+                        <div>
+                            <h3 class="font-headline text-4xl font-bold mt-2">AI Intern</h3>
+                            <p class="text-on-surface/60 mt-1 italic">Dec 2024 — Feb 2025</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-label uppercase border border-primary/20">NLP</span>
+                            <span class="px-3 py-1 bg-secondary/10 text-secondary text-[10px] font-label uppercase border border-secondary/20">ML Orchestration</span>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <div>
+                            <h4 class="font-label text-[10px] text-secondary tracking-widest uppercase mb-6 flex items-center gap-2">
+                                <span class="h-[1px] w-4 bg-secondary/40"></span>
+                                R&D Parameters
+                            </h4>
+                            <ul class="space-y-4">
+                                <li class="flex gap-4">
+                                    <span class="material-symbols-outlined text-secondary text-xl">smart_toy</span>
+                                    <p class="text-sm leading-relaxed text-on-surface/80">Developed intent-driven conversational agents for educational data sets.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="glass-card p-8 border-secondary/20 bg-secondary/[0.02]">
+                             <p class="text-xs text-on-surface/50 font-mono italic">// Logic processed: Rasa, Streamlit, Python</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <Footer />
+</BaseLayout>
+
+<script>
+    const buttons = document.querySelectorAll('.exp-btn');
+    const contents = document.querySelectorAll('.exp-content');
+
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Reset buttons
+            buttons.forEach(b => {
+                b.classList.remove('bg-primary/10', 'text-primary', 'border-primary');
+                b.classList.add('text-on-surface/50', 'border-transparent');
+                b.querySelector('.font-bold')?.classList.remove('font-bold');
+            });
+
+            // Active button
+            btn.classList.add('bg-primary/10', 'text-primary', 'border-primary');
+            btn.classList.remove('text-on-surface/50', 'border-transparent');
+            btn.querySelector('.font-label.text-sm')?.classList.add('font-bold');
+
+            // Switch content
+            const target = btn.id.split('-')[1];
+            contents.forEach(content => {
+                content.classList.add('hidden');
+                if (content.id === `exp-${target}`) {
+                    content.classList.remove('hidden');
+                }
+            });
+        });
+    });
+</script>
+
+<style>
+    .animate-fade-in {
+        animation: fadeIn 0.4s ease-out forwards;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>

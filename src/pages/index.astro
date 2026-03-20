@@ -99,152 +99,41 @@ import Footer from '../components/Footer.astro';
             </div>
         </section>
 
-        <!-- Experience Section -->
+        <!-- Experience Summary Section -->
         <section class="py-24 px-8 max-w-7xl mx-auto" id="experience">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
-                <h2 class="font-headline text-6xl font-bold tracking-tighter">EXPERIENCE</h2>
-                <p class="font-label text-secondary text-sm tracking-[0.3em] uppercase">Professional Trace Log v2.4</p>
-            </div>
-            <div class="grid md:grid-cols-4 gap-0 border border-outline-variant/30 overflow-hidden rounded-xl">
-                <div class="md:col-span-1 bg-surface-container-low border-r border-outline-variant/30">
-                    <div class="p-8">
-                        <div class="mb-4">
-                            <h3 class="font-headline font-bold text-xl text-primary mb-1">Incresco</h3>
-                            <p class="text-xs font-label text-on-surface/40 tracking-widest">Enterprise Systems</p>
-                        </div>
-                        <nav class="space-y-2 mb-8">
-                            <button id="show-ba" class="exp-btn w-full text-left p-4 bg-primary/10 text-primary border-l-4 border-primary transition-all flex items-center justify-between group">
-                                <span class="font-label text-sm uppercase font-bold">Business Analyst</span>
-                                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">insights</span>
-                            </button>
-                            <button id="show-se" class="exp-btn w-full text-left p-4 hover:bg-surface-container-high/50 text-on-surface/50 hover:text-on-surface transition-all flex items-center justify-between group border-l-4 border-transparent">
-                                <span class="font-label text-sm uppercase">Software Engineer Intern</span>
-                                <span class="material-symbols-outlined text-sm">terminal</span>
-                            </button>
-                        </nav>
-                        <div class="mb-4">
-                            <h3 class="font-headline font-bold text-xl text-primary mb-1">Infosys</h3>
-                            <p class="text-xs font-label text-on-surface/40 tracking-widest">Springboard</p>
-                        </div>
-                        <nav class="space-y-2">
-                            <button id="show-ai" class="exp-btn w-full text-left p-4 hover:bg-surface-container-high/50 text-on-surface/50 hover:text-on-surface transition-all flex items-center justify-between group border-l-4 border-transparent">
-                                <span class="font-label text-sm uppercase">AI Intern</span>
-                                <span class="material-symbols-outlined text-sm">smart_toy</span>
-                            </button>
-                        </nav>
-                    </div>
+            <div class="glass-card p-12 flex flex-col md:flex-row items-center justify-between gap-12 bg-primary/[0.02] border-primary/10 relative overflow-hidden">
+                <div class="absolute -top-12 -right-12 p-4 opacity-[0.03] rotate-12 pointer-events-none">
+                    <span class="material-symbols-outlined text-[12rem] text-primary">history_edu</span>
                 </div>
-                <div class="md:col-span-3 p-8 md:p-12 bg-surface">
-                    <div id="exp-ba" class="exp-content block">
-                        <div class="flex flex-col md:flex-row justify-between items-start mb-10 gap-4">
-                            <div>
-                                <span class="text-secondary font-label text-xs uppercase tracking-widest flex items-center gap-2">
-                                    <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
-                                    Current Focus
-                                </span>
-                                <h3 class="font-headline text-3xl font-bold mt-2">Business Analyst</h3>
-                                <p class="text-on-surface/60 mt-1 italic">Nov 2025 — Present</p>
-                            </div>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-label uppercase border border-primary/20">Product Strategy</span>
-                                <span class="px-3 py-1 bg-secondary/10 text-secondary text-[10px] font-label uppercase border border-secondary/20">Requirement Analysis</span>
-                                <span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-label uppercase border border-primary/20">MVP Definition</span>
-                            </div>
-                        </div>
-                        <div class="grid md:grid-cols-2 gap-12">
-                            <ul class="space-y-4">
-                                <li class="flex gap-4">
-                                    <span class="material-symbols-outlined text-secondary text-xl">verified</span>
-                                    <p class="text-sm leading-relaxed">Business requirement analysis and client problem understanding.</p>
-                                </li>
-                                <li class="flex gap-4">
-                                    <span class="material-symbols-outlined text-secondary text-xl">verified</span>
-                                    <p class="text-sm leading-relaxed">Structuring product approaches and solution direction.</p>
-                                </li>
-                                <li class="flex gap-4">
-                                    <span class="material-symbols-outlined text-secondary text-xl">verified</span>
-                                    <p class="text-sm leading-relaxed">Product strategy and MVP definition.</p>
-                                </li>
-                                <li class="flex gap-4">
-                                    <span class="material-symbols-outlined text-secondary text-xl">verified</span>
-                                    <p class="text-sm leading-relaxed">Working with teams to ship early versions that deliver business value.</p>
-                                </li>
-                                <li class="flex gap-4">
-                                    <span class="material-symbols-outlined text-secondary text-xl">verified</span>
-                                    <p class="text-sm leading-relaxed">Contributing to organizational growth by identifying and shaping new opportunities.</p>
-                                </li>
-                            </ul>
-                            <div class="glass-card p-6 relative overflow-hidden accent-gradient">
-                                <div class="absolute top-0 right-0 p-2 opacity-20">
-                                    <span class="material-symbols-outlined text-6xl text-primary">analytics</span>
-                                </div>
-                                <h4 class="font-headline font-bold text-sm text-secondary uppercase tracking-widest mb-4">Core Competencies</h4>
-                                <div class="flex flex-wrap gap-2">
-                                    <span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label text-on-surface uppercase border border-outline-variant/20">Business Analysis</span>
-                                    <span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label text-on-surface uppercase border border-outline-variant/20">Product Strategy</span>
-                                    <span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label text-on-surface uppercase border border-outline-variant/20">Client Relations</span>
-                                    <span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label text-on-surface uppercase border border-outline-variant/20">MVP Definition</span>
-                                    <span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label text-on-surface uppercase border border-outline-variant/20">Requirements Structuring</span>
-                                </div>
-                            </div>
-                        </div>
+                
+                <div class="max-w-xl relative z-10">
+                    <div class="font-label text-primary text-xs tracking-[0.3em] uppercase mb-4">Professional History</div>
+                    <h2 class="font-headline text-5xl font-bold tracking-tighter mb-6">CAREER <br/><span class="text-primary-container">ARCHITECTURE</span></h2>
+                    <p class="text-on-surface/70 leading-relaxed mb-8 font-light text-lg">
+                        From core engineering to strategic Business Analysis. Explore my full professional journey, including detailed role breakdowns and technical achievements.
+                    </p>
+                    <a href="/experience" class="inline-flex items-center gap-4 px-8 py-4 bg-primary text-on-primary font-label text-xs uppercase font-bold tracking-widest hover:brightness-110 active:scale-95 transition-all group">
+                        Enter Trace Log
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4 w-full md:w-auto relative z-10">
+                    <div class="p-6 bg-surface-container-low border border-outline-variant/20 rounded-sm">
+                        <div class="text-2xl font-headline font-bold text-primary mb-1">BA</div>
+                        <div class="text-[10px] font-label uppercase tracking-widest text-on-surface/40">Current Focus</div>
                     </div>
-                    <div id="exp-se" class="exp-content hidden">
-                        <div class="flex flex-col md:flex-row justify-between items-start mb-10 gap-4">
-                            <div>
-                                <h3 class="font-headline text-3xl font-bold mt-2">Software Engineer Intern</h3>
-                                <p class="text-on-surface/60 mt-1 italic">Jul 2025 — Nov 2025</p>
-                            </div>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-label uppercase border border-primary/20">Medusa</span>
-                                <span class="px-3 py-1 bg-secondary/10 text-secondary text-[10px] font-label uppercase border border-secondary/20">React.js</span>
-                                <span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-label uppercase border border-primary/20">ETL</span>
-                            </div>
-                        </div>
-                        <div class="grid md:grid-cols-2 gap-12">
-                            <ul class="space-y-4">
-                                <li class="flex gap-4">
-                                    <span class="material-symbols-outlined text-secondary text-xl">verified</span>
-                                    <p class="text-sm leading-relaxed">Built and maintained Medusa.js backend and storefront.</p>
-                                </li>
-                                <li class="flex gap-4">
-                                    <span class="material-symbols-outlined text-secondary text-xl">verified</span>
-                                    <p class="text-sm leading-relaxed">Developed ETL pipelines for Salesforce to Medusa migration.</p>
-                                </li>
-                            </ul>
-                            <div class="glass-card p-6 relative overflow-hidden accent-gradient">
-                                <div class="absolute top-0 right-0 p-2 opacity-20">
-                                    <span class="material-symbols-outlined text-6xl text-primary">terminal</span>
-                                </div>
-                                <h4 class="font-headline font-bold text-sm text-secondary uppercase tracking-widest mb-4">Tech Arsenal</h4>
-                                <div class="flex flex-wrap gap-2">
-                                    <span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label text-on-surface uppercase border border-outline-variant/20">Medusa</span>
-                                    <span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label text-on-surface uppercase border border-outline-variant/20">React.js</span>
-                                    <span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label text-on-surface uppercase border border-outline-variant/20">PostgreSQL</span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="p-6 bg-surface-container-low border border-outline-variant/20 rounded-sm">
+                        <div class="text-2xl font-headline font-bold text-secondary mb-1">SWE</div>
+                        <div class="text-[10px] font-label uppercase tracking-widest text-on-surface/40">Core Engineering</div>
                     </div>
-                    <div id="exp-ai" class="exp-content hidden">
-                        <div class="flex flex-col md:flex-row justify-between items-start mb-10 gap-4">
-                            <div>
-                                <h3 class="font-headline text-3xl font-bold mt-2">AI Intern</h3>
-                                <p class="text-on-surface/60 mt-1 italic">Dec 2024 — Feb 2025</p>
-                            </div>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-label uppercase border border-primary/20">AI</span>
-                                <span class="px-3 py-1 bg-secondary/10 text-secondary text-[10px] font-label uppercase border border-secondary/20">Rasa</span>
-                                <span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-label uppercase border border-primary/20">Python</span>
-                            </div>
-                        </div>
-                        <div class="grid md:grid-cols-2 gap-12">
-                            <ul class="space-y-6">
-                                <li class="flex gap-4">
-                                    <span class="material-symbols-outlined text-secondary text-xl">verified</span>
-                                    <p class="text-sm leading-relaxed">Developed a personalized learning chatbot using Rasa and Streamlit.</p>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="p-6 bg-surface-container-low border border-outline-variant/20 rounded-sm">
+                        <div class="text-2xl font-headline font-bold text-primary mb-1">AI</div>
+                        <div class="text-[10px] font-label uppercase tracking-widest text-on-surface/40">Research & Dev</div>
+                    </div>
+                    <div class="p-6 bg-surface-container-low border border-outline-variant/20 rounded-sm">
+                        <div class="text-2xl font-headline font-bold text-secondary mb-1">6+</div>
+                        <div class="text-[10px] font-label uppercase tracking-widest text-on-surface/40">Key Projects</div>
                     </div>
                 </div>
             </div>
