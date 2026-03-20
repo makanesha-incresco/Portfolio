@@ -1,0 +1,427 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Home">
+    <Navbar active="home" />
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section class="min-h-[921px] flex flex-col justify-center px-8 max-w-7xl mx-auto relative" id="home">
+            <div class="absolute -top-20 -left-20 w-96 h-96 bg-primary/20 rounded-full blur-[120px]"></div>
+            <div class="absolute top-40 right-0 w-80 h-80 bg-primary/10 rounded-full blur-[100px]"></div>
+            <div class="relative z-10 max-w-4xl">
+                <span class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high border border-outline-variant/30 rounded-sm font-label text-[10px] uppercase tracking-[0.2em] text-secondary mb-6 animate-fade-up">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                    System Architecture & Business Logic
+                </span>
+                <h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-on-background mb-8 leading-[0.95] animate-fade-up delay-100">
+                    BUSINESS ANALYST DELIVERING <br/> <span id="typewriter" class="text-transparent bg-clip-text vibrant-gradient">BUSINESS IMPACT.</span><span class="text-primary cursor-blink">|</span>
+                </h1>
+                <p class="text-lg md:text-xl text-on-surface/70 max-w-2xl mb-12 font-light leading-relaxed animate-fade-up delay-200">
+                    I work at the intersection of business, product, and technology, helping translate client requirements into structured digital solutions.
+                </p>
+                <div class="flex flex-wrap gap-6 animate-fade-up delay-300">
+                    <a href="/process" class="vibrant-gradient text-on-primary px-8 py-4 font-headline font-bold rounded-sm uppercase tracking-widest flex items-center gap-3 transition-all hover:translate-y-[-2px] hover:shadow-[0_0_20px_rgba(129,140,248,0.5)]">
+                        See How I Think
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </a>
+                    <a href="/stack" class="bg-transparent border border-outline-variant text-on-surface px-8 py-4 font-headline font-bold rounded-sm uppercase tracking-widest hover:bg-surface-container-high transition-all flex items-center justify-center">
+                        View Stack
+                    </a>
+                </div>
+            </div>
+            <div class="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-outline-variant/30 pt-12">
+                <div class="glow-card group cursor-pointer p-6 -ml-6 rounded-xl hover:bg-surface-container-high/30 transition-colors border border-transparent hover:border-outline-variant/30">
+                    <div class="font-headline text-2xl font-bold text-primary group-hover:text-primary-container group-hover:-translate-y-1 transition-all">01. ANALYSIS</div>
+                    <div class="text-xs font-label uppercase tracking-widest text-on-surface/40 mt-2 group-hover:text-on-surface/80 transition-colors">Business Logic First</div>
+                    <div class="expand-box text-[10px] sm:text-xs text-on-surface/60 font-body leading-relaxed">Systematic breakdown of client bottlenecks and value streams before technical execution.</div>
+                </div>
+                <div class="glow-card group cursor-pointer p-6 rounded-xl hover:bg-surface-container-high/30 transition-colors border border-transparent hover:border-outline-variant/30">
+                    <div class="font-headline text-2xl font-bold text-secondary group-hover:text-[#dae2fd] group-hover:-translate-y-1 transition-all">02. EXECUTION</div>
+                    <div class="text-xs font-label uppercase tracking-widest text-on-surface/40 mt-2 group-hover:text-on-surface/80 transition-colors">Scalable Engineering</div>
+                    <div class="expand-box text-[10px] sm:text-xs text-on-surface/60 font-body leading-relaxed">Building robust, scalable infrastructure tailored precisely to the analyzed business logic.</div>
+                </div>
+                <div class="glow-card group cursor-pointer p-6 rounded-xl hover:bg-surface-container-high/30 transition-colors border border-transparent hover:border-outline-variant/30">
+                    <div class="font-headline text-2xl font-bold text-primary group-hover:text-primary-container group-hover:-translate-y-1 transition-all">03. IMPACT</div>
+                    <div class="text-xs font-label uppercase tracking-widest text-on-surface/40 mt-2 group-hover:text-on-surface/80 transition-colors">Metric Driven Growth</div>
+                    <div class="expand-box text-[10px] sm:text-xs text-on-surface/60 font-body leading-relaxed">Ensuring the delivered systems directly correlate with measurable revenue or efficiency gains.</div>
+                </div>
+                <div class="glow-card group cursor-pointer p-6 rounded-xl hover:bg-surface-container-high/30 transition-colors border border-transparent hover:border-outline-variant/30">
+                    <div class="font-headline text-2xl font-bold text-secondary group-hover:text-[#dae2fd] group-hover:-translate-y-1 transition-all">04. ITERATION</div>
+                    <div class="text-xs font-label uppercase tracking-widest text-on-surface/40 mt-2 group-hover:text-on-surface/80 transition-colors">MVP to Enterprise</div>
+                    <div class="expand-box text-[10px] sm:text-xs text-on-surface/60 font-body leading-relaxed">Continuous monitoring and refinement to scale the MVP into a full enterprise solution.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Intersection Section -->
+        <section class="py-24 bg-surface-container-low/30">
+            <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
+                <div class="relative group">
+                    <div class="absolute -inset-4 border border-primary/20 scale-[1.02] transition-transform group-hover:scale-[1.05]"></div>
+                    <div class="absolute -inset-1 bg-gradient-to-r from-primary/20 to-secondary/20 blur opacity-30"></div>
+                    <video class="w-full h-[600px] object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700 relative z-10 scale-100 group-hover:scale-105" autoplay loop muted playsinline>
+                        <source src="https://assets.codepen.io/3364143/7btrrd.mp4" type="video/mp4" />
+                    </video>
+                    <div class="absolute bottom-6 left-6 bg-surface p-4 border-l-4 border-secondary z-20">
+                        <p class="font-label text-xs text-secondary uppercase tracking-widest mb-1">Observation 01</p>
+                        <p class="font-headline font-bold text-lg">Requirements × Feasibility</p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="font-headline text-4xl font-bold mb-10 tracking-tight leading-none">The Intersection of <br/><span class="text-secondary">Logic & Profit</span></h2>
+                    <div class="space-y-8">
+                        <div class="flex gap-6 group">
+                            <span class="w-12 h-12 flex items-center justify-center rounded-sm vibrant-gradient text-on-primary font-headline font-bold text-xl shrink-0">01</span>
+                            <div>
+                                <h3 class="font-headline font-bold text-lg mb-2 text-primary">Requirement Synthesis</h3>
+                                <p class="text-on-surface/70 text-sm leading-relaxed">Work closely with clients to understand deep business problems, moving beyond "feature requests" to core systemic friction.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 group">
+                            <span class="w-12 h-12 flex items-center justify-center rounded-sm emerald-gradient text-on-primary font-headline font-bold text-xl shrink-0">02</span>
+                            <div>
+                                <h3 class="font-headline font-bold text-lg mb-2 text-secondary">MVP Stratification</h3>
+                                <p class="text-on-surface/70 text-sm leading-relaxed">Define MVP scope aligned with business goals and technical feasibility, ensuring the fastest path to market validation.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 group">
+                            <span class="w-12 h-12 flex items-center justify-center rounded-sm vibrant-gradient text-on-primary font-headline font-bold text-xl shrink-0">03</span>
+                            <div>
+                                <h3 class="font-headline font-bold text-lg mb-2 text-primary">Impact Engineering</h3>
+                                <p class="text-on-surface/70 text-sm leading-relaxed">Ensure solutions deliver business impact, not just technical output. We build tools that contribute to growth and new opportunities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="py-24 px-8 max-w-7xl mx-auto" id="experience">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+                <h2 class="font-headline text-6xl font-bold tracking-tighter">EXPERIENCE</h2>
+                <p class="font-label text-secondary text-sm tracking-[0.3em] uppercase">Professional Trace Log v2.4</p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-0 border border-outline-variant/30 overflow-hidden rounded-xl">
+                <div class="md:col-span-1 bg-surface-container-low border-r border-outline-variant/30">
+                    <div class="p-8">
+                        <div class="mb-4">
+                            <h3 class="font-headline font-bold text-xl text-primary mb-1">Incresco</h3>
+                            <p class="text-xs font-label text-on-surface/40 tracking-widest">Enterprise Systems</p>
+                        </div>
+                        <nav class="space-y-2 mb-8">
+                            <button id="show-ba" class="exp-btn w-full text-left p-4 bg-primary/10 text-primary border-l-4 border-primary transition-all flex items-center justify-between group">
+                                <span class="font-label text-sm uppercase font-bold">Business Analyst</span>
+                                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">insights</span>
+                            </button>
+                            <button id="show-se" class="exp-btn w-full text-left p-4 hover:bg-surface-container-high/50 text-on-surface/50 hover:text-on-surface transition-all flex items-center justify-between group border-l-4 border-transparent">
+                                <span class="font-label text-sm uppercase">Software Engineer Intern</span>
+                                <span class="material-symbols-outlined text-sm">terminal</span>
+                            </button>
+                        </nav>
+                        <div class="mb-4">
+                            <h3 class="font-headline font-bold text-xl text-primary mb-1">Infosys</h3>
+                            <p class="text-xs font-label text-on-surface/40 tracking-widest">Springboard</p>
+                        </div>
+                        <nav class="space-y-2">
+                            <button id="show-ai" class="exp-btn w-full text-left p-4 hover:bg-surface-container-high/50 text-on-surface/50 hover:text-on-surface transition-all flex items-center justify-between group border-l-4 border-transparent">
+                                <span class="font-label text-sm uppercase">AI Intern</span>
+                                <span class="material-symbols-outlined text-sm">smart_toy</span>
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+                <div class="md:col-span-3 p-8 md:p-12 bg-surface">
+                    <div id="exp-ba" class="exp-content block">
+                        <div class="flex flex-col md:flex-row justify-between items-start mb-10 gap-4">
+                            <div>
+                                <span class="text-secondary font-label text-xs uppercase tracking-widest flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                    Current Focus
+                                </span>
+                                <h3 class="font-headline text-3xl font-bold mt-2">Business Analyst</h3>
+                                <p class="text-on-surface/60 mt-1 italic">Nov 2025 — Present</p>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-label uppercase border border-primary/20">Product Strategy</span>
+                                <span class="px-3 py-1 bg-secondary/10 text-secondary text-[10px] font-label uppercase border border-secondary/20">Requirement Analysis</span>
+                                <span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-label uppercase border border-primary/20">MVP Definition</span>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-12">
+                            <ul class="space-y-4">
+                                <li class="flex gap-4">
+                                    <span class="material-symbols-outlined text-secondary text-xl">verified</span>
+                                    <p class="text-sm leading-relaxed">Business requirement analysis and client problem understanding.</p>
+                                </li>
+                                <li class="flex gap-4">
+                                    <span class="material-symbols-outlined text-secondary text-xl">verified</span>
+                                    <p class="text-sm leading-relaxed">Structuring product approaches and solution direction.</p>
+                                </li>
+                                <li class="flex gap-4">
+                                    <span class="material-symbols-outlined text-secondary text-xl">verified</span>
+                                    <p class="text-sm leading-relaxed">Product strategy and MVP definition.</p>
+                                </li>
+                                <li class="flex gap-4">
+                                    <span class="material-symbols-outlined text-secondary text-xl">verified</span>
+                                    <p class="text-sm leading-relaxed">Working with teams to ship early versions that deliver business value.</p>
+                                </li>
+                                <li class="flex gap-4">
+                                    <span class="material-symbols-outlined text-secondary text-xl">verified</span>
+                                    <p class="text-sm leading-relaxed">Contributing to organizational growth by identifying and shaping new opportunities.</p>
+                                </li>
+                            </ul>
+                            <div class="glass-card p-6 relative overflow-hidden accent-gradient">
+                                <div class="absolute top-0 right-0 p-2 opacity-20">
+                                    <span class="material-symbols-outlined text-6xl text-primary">analytics</span>
+                                </div>
+                                <h4 class="font-headline font-bold text-sm text-secondary uppercase tracking-widest mb-4">Core Competencies</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label text-on-surface uppercase border border-outline-variant/20">Business Analysis</span>
+                                    <span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label text-on-surface uppercase border border-outline-variant/20">Product Strategy</span>
+                                    <span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label text-on-surface uppercase border border-outline-variant/20">Client Relations</span>
+                                    <span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label text-on-surface uppercase border border-outline-variant/20">MVP Definition</span>
+                                    <span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label text-on-surface uppercase border border-outline-variant/20">Requirements Structuring</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="exp-se" class="exp-content hidden">
+                        <div class="flex flex-col md:flex-row justify-between items-start mb-10 gap-4">
+                            <div>
+                                <h3 class="font-headline text-3xl font-bold mt-2">Software Engineer Intern</h3>
+                                <p class="text-on-surface/60 mt-1 italic">Jul 2025 — Nov 2025</p>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-label uppercase border border-primary/20">Medusa</span>
+                                <span class="px-3 py-1 bg-secondary/10 text-secondary text-[10px] font-label uppercase border border-secondary/20">React.js</span>
+                                <span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-label uppercase border border-primary/20">ETL</span>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-12">
+                            <ul class="space-y-4">
+                                <li class="flex gap-4">
+                                    <span class="material-symbols-outlined text-secondary text-xl">verified</span>
+                                    <p class="text-sm leading-relaxed">Built and maintained Medusa.js backend and storefront.</p>
+                                </li>
+                                <li class="flex gap-4">
+                                    <span class="material-symbols-outlined text-secondary text-xl">verified</span>
+                                    <p class="text-sm leading-relaxed">Developed ETL pipelines for Salesforce to Medusa migration.</p>
+                                </li>
+                            </ul>
+                            <div class="glass-card p-6 relative overflow-hidden accent-gradient">
+                                <div class="absolute top-0 right-0 p-2 opacity-20">
+                                    <span class="material-symbols-outlined text-6xl text-primary">terminal</span>
+                                </div>
+                                <h4 class="font-headline font-bold text-sm text-secondary uppercase tracking-widest mb-4">Tech Arsenal</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label text-on-surface uppercase border border-outline-variant/20">Medusa</span>
+                                    <span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label text-on-surface uppercase border border-outline-variant/20">React.js</span>
+                                    <span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label text-on-surface uppercase border border-outline-variant/20">PostgreSQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="exp-ai" class="exp-content hidden">
+                        <div class="flex flex-col md:flex-row justify-between items-start mb-10 gap-4">
+                            <div>
+                                <h3 class="font-headline text-3xl font-bold mt-2">AI Intern</h3>
+                                <p class="text-on-surface/60 mt-1 italic">Dec 2024 — Feb 2025</p>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-label uppercase border border-primary/20">AI</span>
+                                <span class="px-3 py-1 bg-secondary/10 text-secondary text-[10px] font-label uppercase border border-secondary/20">Rasa</span>
+                                <span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-label uppercase border border-primary/20">Python</span>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-12">
+                            <ul class="space-y-6">
+                                <li class="flex gap-4">
+                                    <span class="material-symbols-outlined text-secondary text-xl">verified</span>
+                                    <p class="text-sm leading-relaxed">Developed a personalized learning chatbot using Rasa and Streamlit.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workflow Section -->
+        <section class="py-24 bg-background relative overflow-hidden" id="how-i-work">
+            <div class="max-w-7xl mx-auto px-8 relative z-10">
+                <div class="mb-16">
+                    <h2 class="font-headline text-4xl font-bold tracking-tight mb-2">Product Strategy Workflow</h2>
+                    <p class="text-secondary font-label text-sm uppercase tracking-widest">A 5-Step Business Flow</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-0 border-b border-l border-r border-t-2 border-outline-variant/30 rounded-xl overflow-hidden cursor-pointer relative" id="workflow-grid">
+                    <div class="absolute top-0 left-0 h-[2px] bg-primary w-0 transition-all duration-1000 z-50" id="workflow-progress"></div>
+                    
+                    <div class="p-8 border-r border-b md:border-b-0 border-outline-variant/30 transition-colors group glow-card bg-surface/50 relative z-20 hover:bg-surface transition-all">
+                        <div class="w-8 h-8 rounded-full bg-surface border border-outline-variant/30 flex items-center justify-center mb-6 relative z-30 group-hover:border-primary transition-all">
+                            <span class="font-headline font-black text-xs text-primary/50 group-hover:text-primary transition-colors">01</span>
+                        </div>
+                        <h4 class="font-headline font-bold text-xl mb-2 text-on-surface group-hover:text-primary-container">Understand</h4>
+                        <div class="expand-box text-[10px] text-on-surface/60 leading-relaxed">Deep dive into stakeholder interviews and operational audits.</div>
+                    </div>
+                    <div class="p-8 border-r border-b md:border-b-0 border-outline-variant/30 transition-colors group glow-card bg-surface/50 relative z-20 hover:bg-surface transition-all">
+                        <div class="w-8 h-8 rounded-full bg-surface border border-outline-variant/30 flex items-center justify-center mb-6 relative z-30 group-hover:border-secondary transition-all">
+                            <span class="font-headline font-black text-xs text-secondary/50 group-hover:text-secondary transition-colors">02</span>
+                        </div>
+                        <h4 class="font-headline font-bold text-xl mb-2 text-on-surface group-hover:text-[#dae2fd]">Structure</h4>
+                        <div class="expand-box text-[10px] text-on-surface/60 leading-relaxed">Mapping constraints to technical feasibility.</div>
+                    </div>
+                    <div class="p-8 border-r border-b md:border-b-0 border-outline-variant/30 transition-colors group glow-card bg-surface/50 relative z-20 hover:bg-surface transition-all">
+                        <div class="w-8 h-8 rounded-full bg-surface border border-outline-variant/30 flex items-center justify-center mb-6 relative z-30 group-hover:border-primary transition-all">
+                            <span class="font-headline font-black text-xs text-primary/50 group-hover:text-primary transition-colors">03</span>
+                        </div>
+                        <h4 class="font-headline font-bold text-xl mb-2 text-on-surface group-hover:text-primary-container">Strategy</h4>
+                        <div class="expand-box text-[10px] text-on-surface/60 leading-relaxed">Distilling requirements into high-impact MVP.</div>
+                    </div>
+                    <div class="p-8 border-r border-b md:border-b-0 border-outline-variant/30 transition-colors group glow-card bg-surface/50 relative z-20 hover:bg-surface transition-all">
+                        <div class="w-8 h-8 rounded-full bg-surface border border-outline-variant/30 flex items-center justify-center mb-6 relative z-30 group-hover:border-secondary transition-all">
+                            <span class="font-headline font-black text-xs text-secondary/50 group-hover:text-secondary transition-colors">04</span>
+                        </div>
+                        <h4 class="font-headline font-bold text-xl mb-2 text-on-surface group-hover:text-[#dae2fd]">Ship</h4>
+                        <div class="expand-box text-[10px] text-on-surface/60 leading-relaxed">Deploying initial versions focused purely on immediate value.</div>
+                    </div>
+                    <div class="p-8 transition-colors group glow-card bg-surface/50 relative z-20 hover:bg-surface transition-all">
+                        <div class="w-8 h-8 rounded-full bg-surface border border-outline-variant/30 flex items-center justify-center mb-6 relative z-30 group-hover:border-primary transition-all">
+                            <span class="font-headline font-black text-xs text-primary/50 group-hover:text-primary transition-colors">05</span>
+                        </div>
+                        <h4 class="font-headline font-bold text-xl mb-2 text-on-surface group-hover:text-primary-container">Grow</h4>
+                        <div class="expand-box text-[10px] text-on-surface/60 leading-relaxed">Analyzing metrics to drive iterative enhancements.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="py-24 px-8 max-w-7xl mx-auto" id="projects">
+            <h2 class="font-headline text-5xl font-bold tracking-tighter mb-16">PROJECTS</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Large Project -->
+                <div class="md:col-span-2 glass-card p-8 group relative overflow-hidden flex flex-col justify-between min-h-[400px] accent-gradient">
+                    <div class="relative z-10">
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">monitoring</span>
+                            <span class="font-label text-xs uppercase tracking-widest text-primary">System Infrastructure</span>
+                        </div>
+                        <h3 class="font-headline text-4xl font-bold mb-4 group-hover:text-primary transition-colors">Monitoring System</h3>
+                        <p class="text-on-surface/70 max-w-lg">Unified dashboard for enterprise health monitoring.</p>
+                    </div>
+                    <div class="absolute top-0 right-0 w-1/2 h-full opacity-10 group-hover:opacity-30 transition-opacity">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3FIcnO49kfmor7oG_uV2zjAbuZBVGTLcuV4Kesxgz7u39r9pb6THPhINrfipuNQwnD63IBPn114dRbPed1T1kCLxbLkuizW_MJJ-kSedp2ftXkM08B7y3rnfRqnRvJDqFN9eBhI23-SFyuFjG2vM--oSTIPzj-ocj2PGlf5s0kjVuydP3Ff4VC_MGvlOoN-meRXIITpWnLOaq6LJmmFLDQFxgUzYXAbcQcHNTHSkVD4YOoKiG1m1fUjk99fhbwe2jXnIlD-pzhhI" class="w-full h-full object-cover grayscale" />
+                    </div>
+                </div>
+                <!-- Small Project 1 -->
+                <div class="bg-surface-container-low p-8 flex flex-col justify-between group border border-outline-variant/30 hover:border-secondary/50 transition-colors">
+                    <div>
+                        <span class="material-symbols-outlined text-secondary mb-6 text-3xl">chat_bubble</span>
+                        <h4 class="font-headline text-2xl font-bold mb-3">Learning Chatbot</h4>
+                    </div>
+                    <a href="/projects" class="text-secondary font-headline font-bold text-xs uppercase hover:underline">Explore →</a>
+                </div>
+                <!-- Small Project 2 -->
+                <div class="bg-surface-container-low p-8 flex flex-col justify-between group border border-outline-variant/30 hover:border-primary/50 transition-colors">
+                    <div>
+                        <span class="material-symbols-outlined text-primary mb-6 text-3xl">hub</span>
+                        <h4 class="font-headline text-2xl font-bold mb-3">ETL Pipeline v2</h4>
+                    </div>
+                    <a href="/projects" class="text-primary font-headline font-bold text-xs uppercase hover:underline">Explore →</a>
+                </div>
+                <!-- Small Project 3 -->
+                <div class="bg-surface-container-low p-8 flex flex-col justify-between group border border-outline-variant/30 hover:border-secondary/50 transition-colors">
+                     <div>
+                        <span class="material-symbols-outlined text-secondary mb-6 text-3xl">domain</span>
+                        <h4 class="font-headline text-2xl font-bold mb-3">KEC Hostel System</h4>
+                    </div>
+                    <a href="/projects" class="text-secondary font-headline font-bold text-xs uppercase hover:underline">Explore →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="py-32 px-8 bg-surface-container-low border-y border-outline-variant/30" id="contact">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="font-headline text-5xl md:text-7xl font-bold mb-10 tracking-tighter">Let’s build systems that <span class="text-primary italic">solve.</span></h2>
+                <a href="mailto:contact@makanesha.os" class="inline-block vibrant-gradient text-on-primary px-12 py-5 font-headline font-bold rounded-sm uppercase tracking-[0.2em]">Initialize Connection</a>
+            </div>
+        </section>
+    </main>
+    <Footer />
+</BaseLayout>
+
+<script>
+    // Experience Switcher
+    const buttons = document.querySelectorAll('.exp-btn');
+    const contents = document.querySelectorAll('.exp-content');
+    
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const role = btn.id.replace('show-', '');
+            
+            // Toggle visibility
+            contents.forEach(content => {
+                if (content.id === `exp-${role}`) {
+                    content.classList.remove('hidden');
+                    content.classList.add('block');
+                } else {
+                    content.classList.remove('block');
+                    content.classList.add('hidden');
+                }
+            });
+            
+            // Toggle active state
+            buttons.forEach(b => {
+                b.classList.remove('bg-primary/10', 'text-primary', 'border-primary');
+                b.classList.add('text-on-surface/50', 'border-transparent');
+            });
+            btn.classList.add('bg-primary/10', 'text-primary', 'border-primary');
+            btn.classList.remove('text-on-surface/50', 'border-transparent');
+        });
+    });
+
+    // Typewriter Effect
+    const phrases = ["BUSINESS IMPACT.", "PRODUCT STRATEGY.", "SCALABLE SOLUTIONS.", "METRIC GROWTH."];
+    let i = 0, j = 0;
+    let currentPhrase = [];
+    let isDeleting = false;
+    let isEnd = false;
+
+    function typewriterLoop() {
+        isEnd = false;
+        const typewriterEl = document.getElementById('typewriter');
+        if (!typewriterEl) return;
+        
+        typewriterEl.innerHTML = currentPhrase.join('');
+
+        if (i < phrases.length) {
+            if (!isDeleting && j <= phrases[i].length) {
+                currentPhrase.push(phrases[i][j]);
+                j++;
+            }
+            if (isDeleting && j <= phrases[i].length) {
+                currentPhrase.pop();
+                j--;
+            }
+            if (j == phrases[i].length) {
+                isEnd = true;
+                isDeleting = true;
+            }
+            if (isDeleting && j === 0) {
+                currentPhrase = [];
+                isDeleting = false;
+                i++;
+                if (i == phrases.length) i = 0;
+            }
+        }
+        
+        const speed = isEnd ? 2000 : isDeleting ? 50 : 100;
+        setTimeout(typewriterLoop, speed);
+    }
+    setTimeout(typewriterLoop, 1500);
+</script>
