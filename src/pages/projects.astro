@@ -26,45 +26,43 @@ import Footer from '../components/Footer.astro';
 
         <!-- Projects Grid -->
         <div class="flex flex-col gap-24">
-            <!-- Project 01: Chatbot -->
+            <!-- Project 01: Medusa Inventory (NEW) -->
             <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-                <div class="lg:col-span-5 order-2 lg:order-1">
-                    <div class="relative group">
-                        <div class="absolute -inset-1 bg-gradient-to-r from-primary to-primary-container opacity-20 group-hover:opacity-40 blur transition-opacity"></div>
-                        <div class="relative aspect-video bg-surface-container-high overflow-hidden border border-outline-variant/15">
-                            <video class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 opacity-60 group-hover:opacity-100 scale-105 group-hover:scale-100" autoplay loop muted playsinline>
-                                <source src="https://cdn.coverr.co/videos/coverr-typing-on-a-laptop-5241/1080p.mp4" type="video/mp4" />
-                            </video>
-                            <div class="absolute bottom-4 left-4 flex flex-wrap gap-2">
-                                <span class="bg-surface/90 backdrop-blur px-3 py-1 text-[10px] font-label text-primary border border-primary/20">Rasa NLP</span>
-                                <span class="bg-surface/90 backdrop-blur px-3 py-1 text-[10px] font-label text-primary border border-primary/20">Streamlit</span>
-                                <span class="bg-surface/90 backdrop-blur px-3 py-1 text-[10px] font-label text-primary border border-primary/20">Python</span>
-                            </div>
+                <div class="lg:col-span-7">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="font-label text-[10px] text-secondary tracking-[0.4em] uppercase">E-commerce Backend</span>
+                        <div class="h-[1px] flex-grow bg-outline-variant/20"></div>
+                        <span class="text-4xl font-headline font-bold text-on-surface/10 tracking-tighter">01</span>
+                    </div>
+                    <h2 class="font-headline text-4xl font-bold mb-10 text-on-surface tracking-tight">Medusa Hotel Inventory</h2>
+                    <div class="space-y-12">
+                        <div class="relative pl-8 border-l border-secondary/20">
+                            <span class="absolute -left-1.5 top-0 w-3 h-3 bg-secondary rounded-full blur-[2px]"></span>
+                            <h3 class="font-label text-xs font-bold text-secondary uppercase tracking-widest mb-3">The Problem</h3>
+                            <p class="text-on-surface/70 leading-relaxed font-light">Hotel management systems often lack real-time synchronization between supplier inventory, concierge requests, and internal stock level predictions.</p>
+                        </div>
+                        <div class="relative pl-8 border-l border-secondary/20">
+                            <span class="absolute -left-1.5 top-0 w-3 h-3 bg-secondary rounded-full blur-[2px]"></span>
+                            <h3 class="font-label text-xs font-bold text-secondary uppercase tracking-widest mb-3">The Solution</h3>
+                            <p class="text-on-surface/70 leading-relaxed font-light">Custom module development for Medusa.js to handle B2B supplier flows, automated reordering logic based on guest demand trends, and a unified concierge dashboard.</p>
+                        </div>
+                        <div class="relative pl-8 border-l border-secondary/20">
+                            <span class="absolute -left-1.5 top-0 w-3 h-3 bg-secondary rounded-full blur-[2px]"></span>
+                            <h3 class="font-label text-xs font-bold text-secondary uppercase tracking-widest mb-3">The Outcome</h3>
+                            <p class="text-on-surface/70 leading-relaxed font-light">Unified stock visibility across 3 specialized hospitality departments and 50% faster supplier fulfillment cycles.</p>
                         </div>
                     </div>
                 </div>
-                <div class="lg:col-span-7 order-1 lg:order-2">
-                    <div class="flex items-center gap-4 mb-6">
-                        <span class="text-4xl font-headline font-bold text-on-surface/10 tracking-tighter">01</span>
-                        <div class="h-[1px] flex-grow bg-outline-variant/20"></div>
-                        <span class="font-label text-[10px] text-primary tracking-[0.4em] uppercase">Artificial Intelligence</span>
-                    </div>
-                    <h2 class="font-headline text-4xl font-bold mb-10 text-on-surface tracking-tight">Chatbot for Personalized Learning</h2>
-                    <div class="space-y-12">
-                        <div class="relative pl-8 border-l border-primary/20">
-                            <span class="absolute -left-1.5 top-0 w-3 h-3 bg-primary rounded-full blur-[2px]"></span>
-                            <h3 class="font-label text-xs font-bold text-primary uppercase tracking-widest mb-3">The Problem</h3>
-                            <p class="text-on-surface/70 leading-relaxed font-light">Students struggle to find curated, structured learning paths amidst the noise of generic search results, leading to cognitive overload.</p>
-                        </div>
-                        <div class="relative pl-8 border-l border-primary/20">
-                            <span class="absolute -left-1.5 top-0 w-3 h-3 bg-primary rounded-full blur-[2px]"></span>
-                            <h3 class="font-label text-xs font-bold text-primary uppercase tracking-widest mb-3">The Solution</h3>
-                            <p class="text-on-surface/70 leading-relaxed font-light">Built an NLP orchestration layer using Rasa to interpret user intent and query the YouTube API for high-authority educational content.</p>
-                        </div>
-                        <div class="relative pl-8 border-l border-primary/20">
-                            <span class="absolute -left-1.5 top-0 w-3 h-3 bg-primary rounded-full blur-[2px]"></span>
-                            <h3 class="font-label text-xs font-bold text-primary uppercase tracking-widest mb-3">The Outcome</h3>
-                            <p class="text-on-surface/70 leading-relaxed font-light">Achieved a 40% reduction in search-to-study time with personalized curriculum delivery.</p>
+                <div class="lg:col-span-5">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-secondary to-secondary/40 opacity-20 group-hover:opacity-40 blur transition-opacity"></div>
+                        <div class="relative aspect-video bg-surface-container-high overflow-hidden border border-outline-variant/15">
+                            <img src="/projects/medusa-inventory.png" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 opacity-60 group-hover:opacity-100 scale-105 group-hover:scale-100" />
+                            <div class="absolute bottom-4 left-4 flex flex-wrap gap-2">
+                                <span class="bg-surface/90 backdrop-blur px-3 py-1 text-[10px] font-label text-secondary border border-secondary/20">Medusa.js</span>
+                                <span class="bg-surface/90 backdrop-blur px-3 py-1 text-[10px] font-label text-secondary border border-secondary/20">Hospitality</span>
+                                <span class="bg-surface/90 backdrop-blur px-3 py-1 text-[10px] font-label text-secondary border border-secondary/20">B2B Flow</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -72,23 +70,36 @@ import Footer from '../components/Footer.astro';
 
             <!-- Project 02: Monitoring -->
             <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-                <div class="lg:col-span-7">
+                <div class="lg:col-span-5 order-2 lg:order-1">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-primary to-primary-container opacity-20 group-hover:opacity-40 blur transition-opacity"></div>
+                        <div class="relative aspect-video bg-surface-container-high overflow-hidden border border-outline-variant/15">
+                            <img src="/projects/monitoring.png" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 opacity-60 group-hover:opacity-100 scale-105 group-hover:scale-100" />
+                            <div class="absolute bottom-4 left-4 flex flex-wrap gap-2">
+                                <span class="bg-surface/90 backdrop-blur px-3 py-1 text-[10px] font-label text-primary border border-primary/20">Docker</span>
+                                <span class="bg-surface/90 backdrop-blur px-3 py-1 text-[10px] font-label text-primary border border-primary/20">Prometheus</span>
+                                <span class="bg-surface/90 backdrop-blur px-3 py-1 text-[10px] font-label text-primary border border-primary/20">Grafana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-7 order-1 lg:order-2">
                     <div class="flex items-center gap-4 mb-6">
-                        <span class="font-label text-[10px] text-primary tracking-[0.4em] uppercase">Cloud Infrastructure</span>
-                        <div class="h-[1px] flex-grow bg-outline-variant/20"></div>
                         <span class="text-4xl font-headline font-bold text-on-surface/10 tracking-tighter">02</span>
+                        <div class="h-[1px] flex-grow bg-outline-variant/20"></div>
+                        <span class="font-label text-[10px] text-primary tracking-[0.4em] uppercase">Cloud Infrastructure</span>
                     </div>
                     <h2 class="font-headline text-4xl font-bold mb-10 text-on-surface tracking-tight">Monitoring & Alerting System</h2>
                     <div class="space-y-12">
                         <div class="relative pl-8 border-l border-primary/20">
                             <span class="absolute -left-1.5 top-0 w-3 h-3 bg-primary rounded-full blur-[2px]"></span>
                             <h3 class="font-label text-xs font-bold text-primary uppercase tracking-widest mb-3">The Problem</h3>
-                            <p class="text-on-surface/70 leading-relaxed font-light">Lack of visibility in containerized microservices led to undetected system failures.</p>
+                            <p class="text-on-surface/70 leading-relaxed font-light">Lack of visibility in containerized microservices led to undetected system failures and high latency in incident response.</p>
                         </div>
                         <div class="relative pl-8 border-l border-primary/20">
                             <span class="absolute -left-1.5 top-0 w-3 h-3 bg-primary rounded-full blur-[2px]"></span>
                             <h3 class="font-label text-xs font-bold text-primary uppercase tracking-widest mb-3">The Solution</h3>
-                            <p class="text-on-surface/70 leading-relaxed font-light">Implemented a Prometheus and Grafana observability suite, containerized via Docker for environment parity.</p>
+                            <p class="text-on-surface/70 leading-relaxed font-light">Implemented a Prometheus and Grafana observability suite, containerized via Docker for environment parity across dev and production.</p>
                         </div>
                         <div class="relative pl-8 border-l border-primary/20">
                             <span class="absolute -left-1.5 top-0 w-3 h-3 bg-primary rounded-full blur-[2px]"></span>
@@ -97,17 +108,128 @@ import Footer from '../components/Footer.astro';
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <!-- Project 03: Chatbot -->
+            <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <div class="lg:col-span-7">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="font-label text-[10px] text-secondary tracking-[0.4em] uppercase">Artificial Intelligence</span>
+                        <div class="h-[1px] flex-grow bg-outline-variant/20"></div>
+                        <span class="text-4xl font-headline font-bold text-on-surface/10 tracking-tighter">03</span>
+                    </div>
+                    <h2 class="font-headline text-4xl font-bold mb-10 text-on-surface tracking-tight">Chatbot for Personalized Learning</h2>
+                    <div class="space-y-12">
+                        <div class="relative pl-8 border-l border-secondary/20">
+                            <span class="absolute -left-1.5 top-0 w-3 h-3 bg-secondary rounded-full blur-[2px]"></span>
+                            <h3 class="font-label text-xs font-bold text-secondary uppercase tracking-widest mb-3">The Problem</h3>
+                            <p class="text-on-surface/70 leading-relaxed font-light">Students struggle to find curated, structured learning paths amidst the noise of generic search results.</p>
+                        </div>
+                        <div class="relative pl-8 border-l border-secondary/20">
+                            <span class="absolute -left-1.5 top-0 w-3 h-3 bg-secondary rounded-full blur-[2px]"></span>
+                            <h3 class="font-label text-xs font-bold text-secondary uppercase tracking-widest mb-3">The Solution</h3>
+                            <p class="text-on-surface/70 leading-relaxed font-light">Built an NLP orchestration layer using Rasa to interpret user intent and query the YouTube API for high-authority educational content.</p>
+                        </div>
+                        <div class="relative pl-8 border-l border-secondary/20">
+                            <span class="absolute -left-1.5 top-0 w-3 h-3 bg-secondary rounded-full blur-[2px]"></span>
+                            <h3 class="font-label text-xs font-bold text-secondary uppercase tracking-widest mb-3">The Outcome</h3>
+                            <p class="text-on-surface/70 leading-relaxed font-light">Achieved a 40% reduction in search-to-study time with personalized curriculum delivery.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="lg:col-span-5">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-secondary to-secondary-container opacity-20 group-hover:opacity-40 blur transition-opacity"></div>
+                        <div class="relative aspect-video bg-surface-container-high overflow-hidden border border-outline-variant/15">
+                            <img src="/projects/chatbot.png" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 opacity-60 group-hover:opacity-100 scale-105 group-hover:scale-100" />
+                            <div class="absolute bottom-4 left-4 flex flex-wrap gap-2">
+                                <span class="bg-surface/90 backdrop-blur px-3 py-1 text-[10px] font-label text-secondary border border-secondary/20">Rasa NLP</span>
+                                <span class="bg-surface/90 backdrop-blur px-3 py-1 text-[10px] font-label text-secondary border border-secondary/20">Python</span>
+                                <span class="bg-surface/90 backdrop-blur px-3 py-1 text-[10px] font-label text-secondary border border-secondary/20">Streamlit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project 04: ETL Pipeline -->
+            <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <div class="lg:col-span-5 order-2 lg:order-1">
                     <div class="relative group">
                         <div class="absolute -inset-1 bg-gradient-to-r from-primary to-primary-container opacity-20 group-hover:opacity-40 blur transition-opacity"></div>
                         <div class="relative aspect-video bg-surface-container-high overflow-hidden border border-outline-variant/15">
-                            <video class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 opacity-60 group-hover:opacity-100 scale-105 group-hover:scale-100" autoplay loop muted playsinline>
-                                <source src="https://cdn.coverr.co/videos/coverr-data-center-5244/1080p.mp4" type="video/mp4" />
-                            </video>
+                            <img src="/projects/etl.png" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 opacity-60 group-hover:opacity-100 scale-105 group-hover:scale-100" />
                             <div class="absolute bottom-4 left-4 flex flex-wrap gap-2">
-                                <span class="bg-surface/90 backdrop-blur px-3 py-1 text-[10px] font-label text-primary border border-primary/20">Docker</span>
-                                <span class="bg-surface/90 backdrop-blur px-3 py-1 text-[10px] font-label text-primary border border-primary/20">Prometheus</span>
-                                <span class="bg-surface/90 backdrop-blur px-3 py-1 text-[10px] font-label text-primary border border-primary/20">Grafana</span>
+                                <span class="bg-surface/90 backdrop-blur px-3 py-1 text-[10px] font-label text-primary border border-primary/20">Salesforce</span>
+                                <span class="bg-surface/90 backdrop-blur px-3 py-1 text-[10px] font-label text-primary border border-primary/20">Medusa.js</span>
+                                <span class="bg-surface/90 backdrop-blur px-3 py-1 text-[10px] font-label text-primary border border-primary/20">Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-7 order-1 lg:order-2">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="text-4xl font-headline font-bold text-on-surface/10 tracking-tighter">04</span>
+                        <div class="h-[1px] flex-grow bg-outline-variant/20"></div>
+                        <span class="font-label text-[10px] text-primary tracking-[0.4em] uppercase">Data Engineering</span>
+                    </div>
+                    <h2 class="font-headline text-4xl font-bold mb-10 text-on-surface tracking-tight">ETL Pipeline v2</h2>
+                    <div class="space-y-12">
+                        <div class="relative pl-8 border-l border-primary/20">
+                            <span class="absolute -left-1.5 top-0 w-3 h-3 bg-primary rounded-full blur-[2px]"></span>
+                            <h3 class="font-label text-xs font-bold text-primary uppercase tracking-widest mb-3">The Problem</h3>
+                            <p class="text-on-surface/70 leading-relaxed font-light">High manual overhead and data inconsistency when migrating legacy customer objects from Salesforce to a modern commerce backend.</p>
+                        </div>
+                        <div class="relative pl-8 border-l border-primary/20">
+                            <span class="absolute -left-1.5 top-0 w-3 h-3 bg-primary rounded-full blur-[2px]"></span>
+                            <h3 class="font-label text-xs font-bold text-primary uppercase tracking-widest mb-3">The Solution</h3>
+                            <p class="text-on-surface/70 leading-relaxed font-light">Developed an automated Node.js ETL pipeline with transformation mapping to handle Salesforce schema variations and Medusa entity requirements.</p>
+                        </div>
+                        <div class="relative pl-8 border-l border-primary/20">
+                            <span class="absolute -left-1.5 top-0 w-3 h-3 bg-primary rounded-full blur-[2px]"></span>
+                            <h3 class="font-label text-xs font-bold text-primary uppercase tracking-widest mb-3">The Outcome</h3>
+                            <p class="text-on-surface/70 leading-relaxed font-light">Eliminated 70% of manual entry tasks and ensured 100% data integrity during the migration cycle.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project 05: Hostel System -->
+            <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <div class="lg:col-span-7">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="font-label text-[10px] text-secondary tracking-[0.4em] uppercase">Enterprise Software</span>
+                        <div class="h-[1px] flex-grow bg-outline-variant/20"></div>
+                        <span class="text-4xl font-headline font-bold text-on-surface/10 tracking-tighter">05</span>
+                    </div>
+                    <h2 class="font-headline text-4xl font-bold mb-10 text-on-surface tracking-tight">KEC Hostel Management System</h2>
+                    <div class="space-y-12">
+                        <div class="relative pl-8 border-l border-secondary/20">
+                            <span class="absolute -left-1.5 top-0 w-3 h-3 bg-secondary rounded-full blur-[2px]"></span>
+                            <h3 class="font-label text-xs font-bold text-secondary uppercase tracking-widest mb-3">The Problem</h3>
+                            <p class="text-on-surface/70 leading-relaxed font-light">Legacy paper-based leave processing for over 1000 students was slow, prone to errors, and difficult to audit.</p>
+                        </div>
+                        <div class="relative pl-8 border-l border-secondary/20">
+                            <span class="absolute -left-1.5 top-0 w-3 h-3 bg-secondary rounded-full blur-[2px]"></span>
+                            <h3 class="font-label text-xs font-bold text-secondary uppercase tracking-widest mb-3">The Solution</h3>
+                            <p class="text-on-surface/70 leading-relaxed font-light">Full-stack campus application built with PHP and JavaScript, featuring automated workflow approvals and student-parent notification trails.</p>
+                        </div>
+                        <div class="relative pl-8 border-l border-secondary/20">
+                            <span class="absolute -left-1.5 top-0 w-3 h-3 bg-secondary rounded-full blur-[2px]"></span>
+                            <h3 class="font-label text-xs font-bold text-secondary uppercase tracking-widest mb-3">The Outcome</h3>
+                            <p class="text-on-surface/70 leading-relaxed font-light">Slashed leave processing time by 80% and provided the administration with 100% real-time occupancy data.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-5">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-secondary to-secondary-container opacity-20 group-hover:opacity-40 blur transition-opacity"></div>
+                        <div class="relative aspect-video bg-surface-container-high overflow-hidden border border-outline-variant/15">
+                            <img src="/projects/hostel.png" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 opacity-60 group-hover:opacity-100 scale-105 group-hover:scale-100" />
+                            <div class="absolute bottom-4 left-4 flex flex-wrap gap-2">
+                                <span class="bg-surface/90 backdrop-blur px-3 py-1 text-[10px] font-label text-secondary border border-secondary/20">PHP / MySQL</span>
+                                <span class="bg-surface/90 backdrop-blur px-3 py-1 text-[10px] font-label text-secondary border border-secondary/20">JavaScript</span>
+                                <span class="bg-surface/90 backdrop-blur px-3 py-1 text-[10px] font-label text-secondary border border-secondary/20">Workflows</span>
                             </div>
                         </div>
                     </div>

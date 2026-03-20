@@ -8,27 +8,29 @@ body {
 }
 
 /* Animations */
-@keyframes dash {
-    to { stroke-dashoffset: 0; }
-}
-.animate-dash {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: dash 3s ease-in-out forwards;
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-.fade-up {
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animate-fade-up {
+    animation: fadeUp 0.8s ease-out forwards;
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
-.fade-up.visible {
-    opacity: 1;
-    transform: translateY(0);
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
 }
-.delay-100 { transition-delay: 100ms; }
-.delay-200 { transition-delay: 200ms; }
-.delay-300 { transition-delay: 300ms; }
+
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-500 { animation-delay: 500ms; }
 
 /* Effects */
 .glass-card {
@@ -41,6 +43,15 @@ body {
 }
 .vibrant-gradient {
     background: linear-gradient(90deg, #38BDF8 0%, #818CF8 50%, #34D399 100%);
+}
+
+.text-gradient-vibrant {
+    background: linear-gradient(90deg, #38BDF8 0%, #818CF8 50%, #34D399 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
 }
 
 .glow-card {

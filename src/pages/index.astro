@@ -16,8 +16,8 @@ import Footer from '../components/Footer.astro';
                     <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
                     System Architecture & Business Logic
                 </span>
-                <h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-on-background mb-8 leading-[0.95] animate-fade-up delay-100">
-                    BUSINESS ANALYST DELIVERING <br/> <span id="typewriter" class="text-transparent bg-clip-text vibrant-gradient">BUSINESS IMPACT.</span><span class="text-primary cursor-blink">|</span>
+                <h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-on-background mb-8 leading-[1.1] animate-fade-up delay-100">
+                    BUSINESS ANALYST DELIVERING <br/> <span id="typewriter" class="text-gradient-vibrant">BUSINESS IMPACT.</span><span class="text-primary cursor-blink ml-1">|</span>
                 </h1>
                 <p class="text-lg md:text-xl text-on-surface/70 max-w-2xl mb-12 font-light leading-relaxed animate-fade-up delay-200">
                     I work at the intersection of business, product, and technology, helping translate client requirements into structured digital solutions.
@@ -301,45 +301,96 @@ import Footer from '../components/Footer.astro';
 
         <!-- Projects Section -->
         <section class="py-24 px-8 max-w-7xl mx-auto" id="projects">
-            <h2 class="font-headline text-5xl font-bold tracking-tighter mb-16">PROJECTS</h2>
+            <div class="flex justify-between items-end mb-16 gap-4">
+                <div>
+                    <h2 class="font-headline text-5xl font-bold tracking-tighter mb-4">PROJECTS</h2>
+                    <p class="text-on-surface/50 font-label text-xs uppercase tracking-widest">Engineering Logic & Impact Showcase</p>
+                </div>
+                <a href="/projects" class="text-primary font-headline font-bold text-sm uppercase tracking-widest hover:underline flex items-center gap-2 mb-2">
+                    View All Case Studies <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+            </div>
             <div class="grid md:grid-cols-3 gap-6">
-                <!-- Large Project -->
-                <div class="md:col-span-2 glass-card p-8 group relative overflow-hidden flex flex-col justify-between min-h-[400px] accent-gradient">
+                <!-- Medusa Inventory: Large Featured -->
+                <div class="md:col-span-2 glass-card p-8 group relative overflow-hidden flex flex-col justify-between min-h-[450px] accent-gradient border border-outline-variant/30">
                     <div class="relative z-10">
                         <div class="flex items-center gap-3 mb-6">
-                            <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">monitoring</span>
-                            <span class="font-label text-xs uppercase tracking-widest text-primary">System Infrastructure</span>
+                            <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">inventory_2</span>
+                            <span class="font-label text-xs uppercase tracking-widest text-[#dae2fd]">Hospitality & E-commerce</span>
                         </div>
-                        <h3 class="font-headline text-4xl font-bold mb-4 group-hover:text-primary transition-colors">Monitoring System</h3>
-                        <p class="text-on-surface/70 max-w-lg">Unified dashboard for enterprise health monitoring.</p>
+                        <h3 class="font-headline text-4xl font-bold mb-4 text-on-surface group-hover:text-secondary transition-colors leading-tight">Medusa Hotel Inventory</h3>
+                        <p class="text-on-surface/70 max-w-lg font-light leading-relaxed">
+                            End-to-end inventory management system for hotels. Streamlined supplier flows, real-time stock orchestration, and concierge service integrations built on top of the Medusa.js engine.
+                        </p>
                     </div>
-                    <div class="absolute top-0 right-0 w-1/2 h-full opacity-10 group-hover:opacity-30 transition-opacity">
-                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3FIcnO49kfmor7oG_uV2zjAbuZBVGTLcuV4Kesxgz7u39r9pb6THPhINrfipuNQwnD63IBPn114dRbPed1T1kCLxbLkuizW_MJJ-kSedp2ftXkM08B7y3rnfRqnRvJDqFN9eBhI23-SFyuFjG2vM--oSTIPzj-ocj2PGlf5s0kjVuydP3Ff4VC_MGvlOoN-meRXIITpWnLOaq6LJmmFLDQFxgUzYXAbcQcHNTHSkVD4YOoKiG1m1fUjk99fhbwe2jXnIlD-pzhhI" class="w-full h-full object-cover grayscale" />
+                    <div class="relative z-10 flex gap-4 mt-8">
+                        <a href="/projects" class="px-6 py-2 bg-secondary/10 text-secondary border border-secondary/20 font-label text-[10px] uppercase tracking-widest hover:bg-secondary/20 transition-all">Details</a>
+                        <span class="px-4 py-2 bg-surface-container-highest/50 text-on-surface/40 font-label text-[10px] uppercase tracking-widest border border-outline-variant/20">Production Ready</span>
                     </div>
+                    <div class="absolute top-0 right-0 w-3/5 h-full opacity-10 group-hover:opacity-40 transition-all duration-700">
+                        <img src="/projects/medusa-inventory.png" class="w-full h-full object-cover grayscale group-hover:grayscale-0 scale-110 group-hover:scale-100" />
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-60"></div>
                 </div>
-                <!-- Small Project 1 -->
-                <div class="bg-surface-container-low p-8 flex flex-col justify-between group border border-outline-variant/30 hover:border-secondary/50 transition-colors">
-                    <div>
+
+                <!-- Monitoring System -->
+                <div class="bg-surface-container-low p-8 flex flex-col justify-between group border border-outline-variant/30 hover:border-primary/50 transition-all relative overflow-hidden">
+                    <div class="relative z-10">
+                        <span class="material-symbols-outlined text-primary mb-6 text-3xl">monitoring</span>
+                        <h4 class="font-headline text-2xl font-bold mb-3 text-on-surface">Monitoring Ecosystem</h4>
+                        <p class="text-on-surface/60 text-sm font-light">Prometheus & Grafana suite providing 99.9% visibility into containerized microservices.</p>
+                    </div>
+                    <div class="absolute -right-4 -bottom-4 w-32 h-32 opacity-10 group-hover:opacity-30 group-hover:rotate-12 transition-all duration-700">
+                        <img src="/projects/monitoring.png" class="w-full h-full object-cover grayscale" />
+                    </div>
+                    <a href="/projects" class="relative z-10 text-primary font-headline font-bold text-[10px] uppercase tracking-[0.2em] flex items-center gap-2 mt-8 group-hover:translate-x-2 transition-transform">
+                        Explore <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                    </a>
+                </div>
+
+                <!-- Learning Chatbot -->
+                <div class="bg-surface-container-low p-8 flex flex-col justify-between group border border-outline-variant/30 hover:border-secondary/50 transition-all relative overflow-hidden">
+                    <div class="relative z-10">
                         <span class="material-symbols-outlined text-secondary mb-6 text-3xl">chat_bubble</span>
-                        <h4 class="font-headline text-2xl font-bold mb-3">Learning Chatbot</h4>
+                        <h4 class="font-headline text-2xl font-bold mb-3 text-on-surface">AI Learning Chatbot</h4>
+                        <p class="text-on-surface/60 text-sm font-light">Personalized curriculum delivery using Rasa NLP and YouTube Data API orchestration.</p>
                     </div>
-                    <a href="/projects" class="text-secondary font-headline font-bold text-xs uppercase hover:underline">Explore →</a>
+                    <div class="absolute -right-4 -bottom-4 w-32 h-32 opacity-10 group-hover:opacity-30 group-hover:rotate-12 transition-all duration-700">
+                        <img src="/projects/chatbot.png" class="w-full h-full object-cover grayscale" />
+                    </div>
+                    <a href="/projects" class="relative z-10 text-secondary font-headline font-bold text-[10px] uppercase tracking-[0.2em] flex items-center gap-2 mt-8 group-hover:translate-x-2 transition-transform">
+                        Explore <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                    </a>
                 </div>
-                <!-- Small Project 2 -->
-                <div class="bg-surface-container-low p-8 flex flex-col justify-between group border border-outline-variant/30 hover:border-primary/50 transition-colors">
-                    <div>
+
+                <!-- ETL Pipeline -->
+                <div class="bg-surface-container-low p-8 flex flex-col justify-between group border border-outline-variant/30 hover:border-primary/50 transition-all relative overflow-hidden">
+                    <div class="relative z-10">
                         <span class="material-symbols-outlined text-primary mb-6 text-3xl">hub</span>
-                        <h4 class="font-headline text-2xl font-bold mb-3">ETL Pipeline v2</h4>
+                        <h4 class="font-headline text-2xl font-bold mb-3 text-on-surface">ETL Pipeline v2</h4>
+                        <p class="text-on-surface/60 text-sm font-light">Automated data migration from Salesforce CRM to Medusa DB, reduction in manual entry by 70%.</p>
                     </div>
-                    <a href="/projects" class="text-primary font-headline font-bold text-xs uppercase hover:underline">Explore →</a>
+                    <div class="absolute -right-4 -bottom-4 w-32 h-32 opacity-10 group-hover:opacity-30 group-hover:rotate-12 transition-all duration-700">
+                        <img src="/projects/etl.png" class="w-full h-full object-cover grayscale" />
+                    </div>
+                    <a href="/projects" class="relative z-10 text-primary font-headline font-bold text-[10px] uppercase tracking-[0.2em] flex items-center gap-2 mt-8 group-hover:translate-x-2 transition-transform">
+                        Explore <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                    </a>
                 </div>
-                <!-- Small Project 3 -->
-                <div class="bg-surface-container-low p-8 flex flex-col justify-between group border border-outline-variant/30 hover:border-secondary/50 transition-colors">
-                     <div>
+
+                <!-- KEC Hostel System -->
+                <div class="bg-surface-container-low p-8 flex flex-col justify-between group border border-outline-variant/30 hover:border-secondary/50 transition-all relative overflow-hidden">
+                    <div class="relative z-10">
                         <span class="material-symbols-outlined text-secondary mb-6 text-3xl">domain</span>
-                        <h4 class="font-headline text-2xl font-bold mb-3">KEC Hostel System</h4>
+                        <h4 class="font-headline text-2xl font-bold mb-3 text-on-surface">Hostel Admin Suite</h4>
+                        <p class="text-on-surface/60 text-sm font-light">Campus management system slashing leave processing time by 80% with automated workflows.</p>
                     </div>
-                    <a href="/projects" class="text-secondary font-headline font-bold text-xs uppercase hover:underline">Explore →</a>
+                    <div class="absolute -right-4 -bottom-4 w-32 h-32 opacity-10 group-hover:opacity-30 group-hover:rotate-12 transition-all duration-700">
+                        <img src="/projects/hostel.png" class="w-full h-full object-cover grayscale" />
+                    </div>
+                    <a href="/projects" class="relative z-10 text-secondary font-headline font-bold text-[10px] uppercase tracking-[0.2em] flex items-center gap-2 mt-8 group-hover:translate-x-2 transition-transform">
+                        Explore <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -387,8 +438,8 @@ import Footer from '../components/Footer.astro';
 
     // Typewriter Effect
     const phrases = ["BUSINESS IMPACT.", "PRODUCT STRATEGY.", "SCALABLE SOLUTIONS.", "METRIC GROWTH."];
-    let i = 0, j = 0;
-    let currentPhrase = [];
+    let phraseIndex = 0;
+    let charIndex = 0;
     let isDeleting = false;
     let isEnd = false;
 
@@ -397,26 +448,21 @@ import Footer from '../components/Footer.astro';
         const typewriterEl = document.getElementById('typewriter');
         if (!typewriterEl) return;
         
-        typewriterEl.innerHTML = currentPhrase.join('');
-
-        if (i < phrases.length) {
-            if (!isDeleting && j <= phrases[i].length) {
-                currentPhrase.push(phrases[i][j]);
-                j++;
-            }
-            if (isDeleting && j <= phrases[i].length) {
-                currentPhrase.pop();
-                j--;
-            }
-            if (j == phrases[i].length) {
+        const currentFullPhrase = phrases[phraseIndex];
+        
+        if (!isDeleting) {
+            typewriterEl.textContent = currentFullPhrase.substring(0, charIndex + 1);
+            charIndex++;
+            if (charIndex === currentFullPhrase.length) {
                 isEnd = true;
                 isDeleting = true;
             }
-            if (isDeleting && j === 0) {
-                currentPhrase = [];
+        } else {
+            typewriterEl.textContent = currentFullPhrase.substring(0, charIndex - 1);
+            charIndex--;
+            if (charIndex === 0) {
                 isDeleting = false;
-                i++;
-                if (i == phrases.length) i = 0;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
             }
         }
         
