@@ -5,10 +5,11 @@ const { active = 'home' } = Astro.props;
     <div class="flex justify-between items-center w-full max-w-7xl mx-auto">
         <div class="text-xl font-bold tracking-tighter text-[#38bdf8] font-['Space_Grotesk'] uppercase">MAKANESHA_V</div>
         <div class="hidden md:flex gap-8 items-center">
-            <a class={`font-['Space_Grotesk'] tracking-tighter uppercase text-sm ${active === 'home' ? 'text-[#38bdf8] border-b-2 border-[#38bdf8] pb-1' : 'text-[#dae2fd]/60 hover:text-[#dae2fd] transition-colors'}`} href="/">Home</a>
-            <a class="font-['Space_Grotesk'] tracking-tighter uppercase text-sm text-[#dae2fd]/60 hover:text-[#dae2fd] transition-colors" href="/#experience">Experience</a>
-            <a class={`font-['Space_Grotesk'] tracking-tighter uppercase text-sm ${active === 'process' ? 'text-[#38bdf8] border-b-2 border-[#38bdf8] pb-1' : 'text-[#dae2fd]/60 hover:text-[#dae2fd] transition-colors'}`} href="/process">Process</a>
-            <a class={`font-['Space_Grotesk'] tracking-tighter uppercase text-sm ${active === 'projects' ? 'text-[#38bdf8] border-b-2 border-[#38bdf8] pb-1' : 'text-[#dae2fd]/60 hover:text-[#dae2fd] transition-colors'}`} href="/projects">Projects</a>
+            <a class={`font-['Space_Grotesk'] tracking-tighter uppercase text-sm ${active === 'home' ? 'text-primary border-b-2 border-primary pb-1' : 'text-[#dae2fd]/60 hover:text-[#dae2fd] transition-colors'}`} href="/">Home</a>
+            <a class={`font-['Space_Grotesk'] tracking-tighter uppercase text-sm ${active === 'experience' ? 'text-primary border-b-2 border-primary pb-1' : 'text-[#dae2fd]/60 hover:text-[#dae2fd] transition-colors'}`} href="/#experience">Experience</a>
+            <a class={`font-['Space_Grotesk'] tracking-tighter uppercase text-sm ${active === 'works' ? 'text-primary border-b-2 border-primary pb-1' : 'text-[#dae2fd]/60 hover:text-[#dae2fd] transition-colors'}`} href="/works">Works</a>
+            <a class={`font-['Space_Grotesk'] tracking-tighter uppercase text-sm ${active === 'process' ? 'text-primary border-b-2 border-primary pb-1' : 'text-[#dae2fd]/60 hover:text-[#dae2fd] transition-colors'}`} href="/process">Process</a>
+            <a class={`font-['Space_Grotesk'] tracking-tighter uppercase text-sm ${active === 'projects' ? 'text-primary border-b-2 border-primary pb-1' : 'text-[#dae2fd]/60 hover:text-[#dae2fd] transition-colors'}`} href="/projects">Projects</a>
             <a class="font-['Space_Grotesk'] tracking-tighter uppercase text-sm text-[#dae2fd]/60 hover:text-[#dae2fd] transition-colors" href="/#contact">Contact</a>
         </div>
         <div class="flex items-center gap-4">
